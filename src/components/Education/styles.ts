@@ -9,6 +9,7 @@ export const Container = styled.section`
     h2{
       text-align: center;
       font-size: 4rem;
+      color: var(--black);
     }
     p{
       color: var(--green);

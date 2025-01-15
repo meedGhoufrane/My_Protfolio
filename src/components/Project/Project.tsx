@@ -25,7 +25,24 @@ export function Project() {
               <h3>BookJar - Digital Library Management Platform</h3>
               <p>Developed a comprehensive digital library management system using React, NestJS, and AWS microservices architecture, enabling users to manage book borrowing, perform advanced searches, and receive automated notifications. The platform leverages AWS Cognito for authentication, DynamoDB/MongoDB for data storage, and implements a complete CI/CD pipeline, resulting in an 80% reduction in loan processing time and supporting 1000+ concurrent users.</p>
             </div>
-            <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer>
+            <footer>
+              <ul className="tech-list">
+                {[
+                  'React.js',
+                  'NestJS',
+                  'Cognito',
+                  'ECS',
+                  'S3',
+                  'CI/CD'
+                ].map((tech) => (
+                  <li
+                    key={tech}
+                    className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}              </ul>
+            </footer>
           </div>
         </ScrollAnimation>
 
@@ -47,9 +64,20 @@ export function Project() {
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Streamlit</li>
-                <li>DynamoDB</li>
-                <li>LangChain</li>
+                {[
+                  'React Native',
+                  'Expo',
+                  'Google Maps',
+                  'Firebase',
+                  'JavaScript',
+                ].map((tech) => (
+                  <li
+                    key={tech}
+                    className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </footer>
           </div>
@@ -78,9 +106,20 @@ export function Project() {
             </div>
             <footer>
               <ul className="tech-list">
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
+                {[
+                  'React',
+                  'Express/NestJS',
+                  'MongoDB',
+                  'JWT',
+                  'Jest'
+                ].map((tech) => (
+                  <li
+                    key={tech}
+                    className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </footer>
           </div>
@@ -123,28 +162,34 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <title>Code</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Real-Time-Hand-Gesture-Driven-3D-Object-Manipulation" target="_blank" rel="noreferrer">
+                <a href="https://github.com/meedGhoufrane/CHRIH" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://youtu.be/NOm-3MynPLE" target="_blank" rel="noreferrer">
+                <a href="https://github.com/meedGhoufrane/CHRIH" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>Real-Time Hand Gesture-Driven 3D Object Manipulation</h3>
-              <p>Developed a real-time hand gesture recognition system for intuitive 3D object manipulation. Leveraged a multimodal approach integrating OpenCV for video processing, MediaPipe for hand detection/landmark extraction, and scikit-learn for machine learning model training. Achieved 95.2% accuracy in hand gesture classification with efficient real-time performance.</p>
+              <h3>Chrih Daba</h3>
+              <p>
+                A comprehensive e-commerce web application built with Laravel Voyager, featuring advanced product management,
+                secure payment processing, and an optimized user experience. The platform includes a robust admin dashboard
+                for managing products, orders, and users, along with sophisticated customer features like personalized product
+                suggestions and streamlined checkout process.   </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>OpenCV</li>
-                <li>MediaPipe</li>
-                <li>scikit-learn</li>
+                {['Laravel Voyager', 'PHP', 'HTML', 'CSS', 'JavaScript', 'Blade'].map((tech) => (
+                  <li
+                    key={tech}
+                    className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </footer>
           </div>
@@ -153,29 +198,51 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Code</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
               <div className="project-links">
-                <a href="https://velocityai.vinayaksingh.com/" target="_blank" rel="noreferrer">
+                <a href="https://github.com/meedGhoufrane/StaduimStream" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="https://github.com/meedGhoufrane/StaduimStream" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>VeloCityAI</h3>
-              <p>
-                VelocityAI is a website that allows users to get instant answers to any question and generate stunning AI pictures using OpenAI's GPT-3 and DALL-E model.With VelocityAI, users can type in text-based prompts and receive a corresponding response.
-              </p>
+              <h3>StadiumStream</h3>
+              <p> A comprehensive online booking system for AFCON 2023™ e-tickets. Features include stadium management,
+                match scheduling, real-time ticket availability tracking, and user authentication. Administrators can
+                manage national teams, stadiums, and monitor bookings, while spectators can view weekly match schedules
+                and book tickets with capacity constraints and time-based restrictions.</p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>React</li>
-                <li>Typescript</li>
-                <li>Html</li>
-                <li>css</li>
+                {[
+                  'HTML5',
+                  'CSS3',
+                  'JavaScript',
+                  'jQuery',
+                  'PHP',
+                  'MVC',
+                  'PDO',
+                  'Figma'
+                ].map((tech) => (
+                  <li
+                    key={tech}
+                    className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </footer>
           </div>
         </ScrollAnimation>
+
+
       </div>
     </Container>
   );
